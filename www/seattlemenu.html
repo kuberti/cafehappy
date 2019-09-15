@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seattle Menu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- <script type="text/JavaScript" src="js/script.js"></script> -->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("images/cafehappyseattlecover.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/pictureofme.jpg");
+    height: 400;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/contactimage.jpg");
+    min-height: 400px;
+}
+
+.menu {
+  display: none;
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href= "index.html" class="bar-item button">HOME </a>
+    <a href="#menu2" class="bar-item button">MENU</a>
+    <a href="#" class="bar-item button hide-small right hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity"><span class="hide-small">CAFE HAPPY: </span>SEATTLE</span>
+  </div>
+</div> 
+
+<div class="content container padding-64" id="menu">
+    <h3 class="center"> SEATTLE MENU</h3>
+    <!-- Menu Container -->
+<div class="container" id="menu2">
+  <div class="content" style="max-width:700px">
+    <div class="row center card padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');" id="myLink">
+        <div class="col s6 tablink">Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Food');">
+        <div class="col s6 tablink">Food</div>
+      </a>
+    </div>
+
+    <div id="Food" class="container menu padding-48 card">
+      <h3><b>Snacks</b></h3><br>
+      <h5>Veggie Buns</h5>
+      <p class="text-grey">Cabbage, Carrots, Rice Noodle, Mushroom</p><br>
+    
+      <h5>Soy Meat Buns</h5>
+      <p class="text-grey">Soy Meat, Cabbage, Carrots with house sauce</p><br>
+    
+      <h5>Tea Leaf Egg</h5>
+      <p class="text-grey">Hard-boiled egg infused with tea leaves</p><br>
+
+      <h3><b>Bentos</b></h3><br>
+    
+      <h5>Monday</h5>
+      <p class="text-grey">Spicy Club Fries</p><br>
+    
+      <h5>Wednesday</h5>
+      <p class="text-grey">Soy Chicken with Broccoli</p><br>
+
+      <h5>Thursday</h5>
+      <p class="text-grey">Ma Po Tofu</p><br>
+    
+    </div>
+
+    <div id="Drinks" class="container menu padding-48 card">
+      <h3><b>Boba Iced Teas</b></h3><br>
+    
+      <h5>Just Jasmine</h5>
+      <p class="text-grey">Jasmine iced tea with sweetner</p><br>
+    
+      <h5>Lil' Lychee</h5>
+      <p class="text-grey">Lychee flavor with jasmine tea</p><br>
+    
+      <h5>Summer Paradise</h5>
+      <p class="text-grey">Passion fruit flavor with jasmine tea</p><br>
+    
+      <h5>Presto Peach</h5>
+      <p class="text-grey">Peach flavor with jasmine tea</p><br>
+
+      <h5>Honey Green</h5>
+      <p class="text-grey">Freshly brewed jasmine green tea with honey</p><br>
+
+      <h3><b>Boba Milk Teas</b></h3><br>
+    
+      <h5>Original (OG)</h5>
+      <p class="text-grey">Freshly brewed black tea made with non-dairy creamer</p><br>
+    
+      <h5>Lavishly Lavender</h5>
+      <p class="text-grey">Lavender flavoring with brewed black tea</p><br>
+    
+      <h5>Tasty Taro</h5>
+      <p class="text-grey">Non-dairy creamer with taro flavoring</p><br>
+    
+      <h5>All About Almond</h5>
+      <p class="text-grey">Almond milk with freshly brewed black tea</p><br>
+
+      <h5>Hella Honey</h5>
+      <p class="text-grey">Original milk tea with honey</p><br>
+
+      <h5>Macho Matcha</h5>
+      <p class="text-grey">Matcha powder with non-dairy creamer and natural sweetner</p><br>
+
+      <h5>Ginger Milk Tea</h5>
+      <p class="text-grey">Ginger with original milk tea</p><br>
+
+      <h3><b>Boba Smoothies</b></h3><br>
+    
+      <h5>Mango Mango</h5>
+      <p class="text-grey">Real mango blended with ice</p><br>
+    
+      <h5>Sunny Day</h5>
+      <p class="text-grey">Organic banana blended with strawberry</p><br>
+    
+      <h5>Hawaiian Freeze</h5>
+      <p class="text-grey">Pineapple, Coconut, Lychee</p><br>
+    
+      <h5>Strawberry Lemonade</h5>
+      <p class="text-grey">Get it? No? Nvm.</p><br>
+
+      <h3><b>Organic Juice & Smoothies</b></h3><br>
+    
+      <h5>Sunrise Juice</h5>
+      <p class="text-grey">Orange, Pineapple, Apple</p><br>
+    
+      <h5>ABC... and D Juice</h5>
+      <p class="text-grey">Apple, Beet, Carrot, Dragonfruit</p><br>
+    
+      <h5>Sunset Juice Juice</h5>
+      <p class="text-grey">Orange, Banana, Strawberry</p><br>
+    
+      <h5>Pearfection Smoothie</h5>
+      <p class="text-grey">Pear, Apple, Orange, Banana, Honey</p><br>
+
+      <h5>Green Future Smoothie</h5>
+      <p class="text-grey">Kale, Celery, Spinach, Apple, Cucumber</p><br>
+
+      <h5>Kirkland Smoothie</h5>
+      <p class="text-grey">Banana, Avocado, Vegan Protein Powder, Almond Butter, Coconut Water</p><br>
+
+      <h5>Hulk Smoothie</h5>
+      <p class="text-grey">Matcha Powder, Almond Milk, Banana, Avocado, Flax Seed, Chia Seed, Honey </p><br>
+    </div>  
+  </div>
+</div>
+<script>
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " dark-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
+
+</div>
+</body>
+</html>
+

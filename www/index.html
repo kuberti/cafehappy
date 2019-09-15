@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cafe Happy</title>
+<link rel="stylesheet" href= "css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.menu {
+  display: none;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("images/coverpic3cf.jpg");
+    min-height: 100%;
+    height: 400px;
+    width: 100%
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/pictureofme.jpg");
+    height: 400;
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    height: 400px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button">HOME</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#gallery" class="bar-item button">GALLERY</a>
+    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#menu" class="bar-item button">MENU</a>
+    <a href="#" class="bar-item button hide-small right hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity">CAFE HAPPY</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="content container padding-64" id="about">
+  <h3 class="center">ABOUT</h3>
+  <p class="center">Cafe Happy was founded in 1996.</p>
+  <div class="row">
+    </div>
+    </div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class="content container padding-64" id="gallery">
+  <h3 class="center">GALLERY</h3>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+    <img src="images/drinks1.jpg" style="width:100%" height = "290" alt="Sunlight under Leaves">
+    </div>
+
+    <div class="col m3">
+    <img src="images/foodpic1.jpg" style="width:100%" alt="Sunlight under Leaves">
+    </div>
+
+    <div class="col m3">
+    <img src="images/meatbuns1.jpg" style="width:100%" alt="City of Los Angeles">
+    </div>
+
+    <div class="col m3">
+    <img src="images/drink.jpg" style="width:100%" alt="Vines">
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+    <img src="images/food3.jpg" style="width:100%" width = "500" height = "162" alt="Snow on the Rooftop">
+    </div>
+
+    <div class="col m3">
+     <img src="images/friedrice.jpg" style="width:100%" height = "162" alt="Tree in the Sunset">
+    </div>
+
+    <div class="col m3">
+    <img src="images/ricenoodle.jpg" style="width:100%" alt="Cactus in the Sunset">
+    </div>
+
+    <div class="col m3">
+    <img src="images/seattlestore.jpg" style="width:100%" alt="Beach Tree">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+-->
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 display-container opacity-min" id = "contact">
+  <h3  class="center">CONTACT:</h3>
+  <h2 class="center"> Phone: (425) 822-9696</h2>
+
+  <div class="content container padding-64" id="menu">
+      <h3 class="center">MENU</h3>
+
+ <div class="row">
+      <div class="col m6 center padding-large">
+        <h3>SEATTLE</h3>
+          <a href="seattlemenu.html"><img src="images/seattlestore.jpg" width = "400" height = "280" alt="Beach Tree"></a>
+
+          </div>
+          <div class="center">
+          <h3>KIRKLAND</h3>
+          </div>
+          <div class="col m6 center padding-large">
+           <a href="kirklandmenu.html"><img src="images/storefrontcf.jpg" class="round image" alt="Cafe Happy Photo" width="500" height="333"></a>
+            </div>    
+
+          
+  </div>
+  </div>
+</div>  
+  
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

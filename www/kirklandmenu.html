@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kirkland Menu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- <script type="text/JavaScript" src="js/script.js"></script> -->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("images/kirklandstartpic.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/pictureofme.jpg");
+    height: 400;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/contactimage.jpg");
+    min-height: 400px;
+}
+
+.menu {
+  display: none;
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="bar-item button">HOME</a>
+    <a href="#menu2" class="bar-item button">MENU</a>
+    <a href="#" class="bar-item button hide-small right hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity"><span class="hide-small">CAFE HAPPY: </span>KIRKLAND</span>
+  </div>
+</div> 
+
+<div class="content container padding-64" id="menu2">
+    <h3 class="center"> KIRKLAND MENU</h3>
+    <!-- Menu Container -->
+<div class="container" id="menu">
+  <div class="content" style="max-width:700px">
+    <div class="row center card padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');" id="myLink">
+        <div class="col s6 tablink">Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Food');">
+        <div class="col s6 tablink">Food</div>
+      </a>
+    </div>
+
+    <div id="Food" class="container menu padding-48 card">
+
+   <h3><b>Snacks</b></h3><br>
+
+    <h5>Soy Meat Buns</h5>
+    <p class="text-grey">Two of our famous, homemade buns filled with a mixture of soy meats and vegetables</p><br>
+
+    <h3><b>Entrees</b></h3><br>
+
+      <h5>#5 Vegetarian Ma Po Tofu</h5>
+      <p class="text-grey">Tofu stir fried with green peas in a tasty bean paste sauce</p><br>
+    
+      <h5>#19 Spicy Club Fries</h5>
+      <p class="text-grey">Zucchini strips stir fried with soy beef, carrots and soy ham in a sweet and spicy bean paste sauce</p><br>
+
+      <h5>#24 Vegetarian Meatball with Broccoli</h5>
+      <p class="text-grey">Homemade vegetarian meatballs mixed with napa cabbage, carrots, broccoli in a sweet and sour sauce</p><br>
+    
+      <h5>#27 Soy Chicken with Broccoli</h5>
+      <p class="text-grey">Steamed soy chicken with carrots and broccoli in a light mushroom paste sauce</p><br>
+    
+      <h5>#28 Soy Meat with Broccoli</h5>
+      <p class="text-grey">Sauteed soy ham with soy chicken, carrots and broccoli in a mushroom paste sauce</p><br>
+    
+      <h5>#30 Vegetarian Fried Rice</h5>
+      <p class="text-grey">Soy ham, corn, peas, cabbage and carrots fried with our special Cafe Happy rice</p><br>
+
+      <h5>#34 Soy Beef Noodle</h5>
+      <p class="text-grey">Award winning! Soy beef sauteed in a bean paste and sweet and sour sauce over rice noodles with steamed spinach</p>
+    </div>
+
+    <div id="Drinks" class="container menu padding-48 card">
+     <h3><b>Iced Teas </b></h3><br>
+
+      <h5>Original Milk Boba Tea</h5>
+      <p class="text-grey">The original! Iced black milk tea with black tapioca pearls</p><br>
+    
+      <h5>Taro Milk Boba Tea</h5>
+      <p class="text-grey">Purple Hawaiian root tea with non-dairy creamer and black tapioca pearls</p><br>
+    
+      <h5>Lavender Milk Boba Tea</h5>
+      <p class="text-grey">Black milk tea infused with lavender with black tapioca pearls</p><br>
+    
+      <h5>Matcha Milk Boba Tea</h5>
+      <p class="text-grey">Imported matcha powder with non-dairy creamer and black tapioca pearls</p><br>
+
+      <h5>Almond Milk Boba Tea</h5>
+      <p class="text-grey">Iced black milk tea infused with almond and black tapioca pearls</p><br>
+
+      <h5>Summer Paradise Boba Tea</h5>
+      <p class="text-grey">Our special Jasmine-Green tea with passion fruit and black tapioca pearls</p><br>
+
+      <h5>Lychee Iced Boba Tea</h5>
+      <p class="text-grey">Our special Jasmine-Green tea with Lychee and black tapioca pearls</p><br>
+
+      <h3><b>Smoothies</b></h3><br>
+
+      <h5>Mango Boba Smoothie</h5>
+      <p class="text-grey">Blended fresh mango with black tapioca pearls</p><br>
+    
+      <h5>Strawberry Boba Smoothie</h5>
+      <p class="text-grey">Blended fresh strawberry with black tapioca pearls</p><br>
+    
+      <h5>Honeydew Boba Smoothie</h5>
+      <p class="text-grey">Blended honeydew with black tapioca pearls</p><br>
+    
+      <h5>Strawberry Lemonade Boba Smoothie</h5>
+      <p class="text-grey">Blended fresh strawberry with fresh-squeezed lemon juice and black tapioca pearls</p><br>
+
+      <h5>Summer Paradise Boba Smoothie</h5>
+      <p class="text-grey">Blended passion fruit with black tapioca pearls</p><br>
+
+      <h5>Hawaiian Freeze Boba Smoothie</h5>
+      <p class="text-grey">Like a Pina Colada! Blended fresh pineapple with coconut and black tapioca pearls</p><br>
+
+      <h5>Sunny Day Boba Smoothie</h5>
+      <p class="text-grey">Blended fresh strawberry and banana with black tapioca pearls</p><br>
+
+      <h3><b>Juices</b></h3>
+      <p class="text-grey">All our juices are fresh squeezed and made to order!</p><br>
+
+      <h5>Orange, Pineapple, Apple</h5><br>
+
+      <h5>Apple, Carrot, Celery</h5><br>
+
+      <h5>Apple, Strawberry, Lemon</h5><br>
+
+      <h5>Orange, Banana, Strawberry</h5><br>
+
+      <h5>Carrot, Spinach, Orange</h5><br>
+
+      <h5>Carrot, Beet, Orange</h5><br>
+
+      <h5>Apple, Spinach, Celery</h5><br>
+
+      <h3><b>Hot Beverages</b></h3><br>
+
+      <h5>Hot Original Milk Tea</h5>
+      <p class="text-grey">Hot black milk tea</p><br>
+    
+      <h5>Hot Lavender Milk Tea</h5>
+      <p class="text-grey">Hot black milk tea infused with lavender</p><br>
+    
+      <h5>Hot Chai Milk Tea</h5>
+      <p class="text-grey">Sweet and spicy hot chai milk tea</p><br>
+    
+      <h5>Hot Ginger Milk Tea</h5>
+      <p class="text-grey">Hot black milk tea infused with ginger</p><br>
+
+      <h5>Hot Matcha Milk Tea</h5>
+      <p class="text-grey">Hot tea made from imported matcha powder with non-dairy creamer</p><br>
+
+      <h5>Hot Oolong Tea</h5>
+      <p class="text-grey">Hot Oolong tea steeped to perfection</p><br>
+
+      <h5>Hot Taiwanese Coffee</h5>
+      <p class="text-grey">Coffee infused with ginger and spices served hot</p>
+
+    </div>  
+  </div>
+</div>
+<script>
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " dark-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
+
+</div>
+</body>
+</html>
