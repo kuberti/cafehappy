@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
-    color: #777;
+    color: #000;
     line-height: 1.8;
 }
 
@@ -65,9 +66,9 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="top">
+<div class="top wide">
   <div class="bar" id="myNavbar">
-    <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="bar-item button hover-black hide-medium hide-large right wide" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="index.html" class="bar-item button">HOME</a>
@@ -79,9 +80,9 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 display-container opacity-min" id="home">
+<div class="bgimg-1 display-container" id="home">
   <div class="display-middle" style="white-space:nowrap;">
-    <span class="center padding-large black xlarge wide animate-opacity"><span class="hide-small">CAFE HAPPY: </span>KIRKLAND</span>
+    <span class="center padding-large black xxxlarge wide"><span class="hide-small">CAFE HAPPY: </span>KIRKLAND</span>
   </div>
 </div> 
 
@@ -98,124 +99,500 @@ body, html {
         <div class="col s6 tablink">Food</div>
       </a>
     </div>
+  
 
     <div id="Food" class="container menu padding-48 card">
 
    <h3><b>Snacks</b></h3><br>
 
     <h5>Soy Meat Buns</h5>
-    <p class="text-grey">Two of our famous, homemade buns filled with a mixture of soy meats and vegetables</p><br>
+    <p class="text-grey">Two of our famous, homemade buns filled with a mixture of soy meats and vegetables</p>
+    <img src="images/soymeatbuns.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="ccjae4@gmail.com">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="item_name" value="Kirk Soy Meat Buns (1 order = 2 pcs)">
+      <input type="hidden" name="amount" value="3.50">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="button_subtype" value="products">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="tax_rate" value="10.000">
+      <input type="hidden" name="add" value="1">
+      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      
+    <br>
 
-    <h3><b>Entrees</b></h3><br>
+    <h3><b>Entrees</b></h3>
+    <h4>Food orders take from 10-20 minutes to make</h4>
+    <br>
 
       <h5>#5 Vegetarian Ma Po Tofu</h5>
-      <p class="text-grey">Tofu stir fried with green peas in a tasty bean paste sauce</p><br>
+      <p class="text-grey">Tofu stir fried with green peas in a tasty bean paste sauce</p>
+      <img src="images/mapotofu.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#5 Ma Po Tofu (Kirk)">
+        <input type="hidden" name="item_number" value="5">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>#19 Spicy Club Fries</h5>
-      <p class="text-grey">Zucchini strips stir fried with soy beef, carrots and soy ham in a sweet and spicy bean paste sauce</p><br>
+      <p class="text-grey">Zucchini strips stir fried with soy beef, carrots and soy ham in a sweet and spicy bean paste sauce</p>
+      <img src="images/num19.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#19 Spicy Club Fries (Kirk)">
+        <input type="hidden" name="item_number" value="19">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        
+      <br>
 
       <h5>#24 Vegetarian Meatball with Broccoli</h5>
-      <p class="text-grey">Homemade vegetarian meatballs mixed with napa cabbage, carrots, broccoli in a sweet and sour sauce</p><br>
+      <p class="text-grey">Homemade vegetarian meatballs mixed with napa cabbage, carrots, broccoli in a sweet and sour sauce</p>
+      <img src="images/meatballs.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#24 Vegetarian Meatball (Kirk)">
+        <input type="hidden" name="item_number" value="24">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>#27 Soy Chicken with Broccoli</h5>
-      <p class="text-grey">Steamed soy chicken with carrots and broccoli in a light mushroom paste sauce</p><br>
+      <p class="text-grey">Steamed soy chicken with carrots and broccoli in a light mushroom paste sauce</p>
+      <img src="images/soychicken.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#27 Soy Chicken with Broccoli (Kirk)">
+        <input type="hidden" name="item_number" value="27">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>#28 Soy Meat with Broccoli</h5>
-      <p class="text-grey">Sauteed soy ham with soy chicken, carrots and broccoli in a mushroom paste sauce</p><br>
+      <p class="text-grey">Sauteed soy ham with soy chicken, carrots and broccoli in a mushroom paste sauce</p>
+      <img src="images/soychicken.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#28 Soy Meat with Broccoli (Kirk)">
+        <input type="hidden" name="item_number" value="28">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden"" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>#30 Vegetarian Fried Rice</h5>
-      <p class="text-grey">Soy ham, corn, peas, cabbage and carrots fried with our special Cafe Happy rice</p><br>
+      <p class="text-grey">Soy ham, corn, peas, cabbage and carrots fried with our special Cafe Happy rice</p>
+      <img src="images/friedrice.jpg" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#30 Vegetarian Fried Rice (Kirk)">
+        <input type="hidden" name="item_number" value="30">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
 
       <h5>#34 Soy Beef Noodle</h5>
       <p class="text-grey">Award winning! Soy beef sauteed in a bean paste and sweet and sour sauce over rice noodles with steamed spinach</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#34 Soy Beef Noodle (Kirk)">
+        <input type="hidden" name="item_number" value="34">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
     </div>
 
     <div id="Drinks" class="container menu padding-48 card">
-     <h3><b>Iced Teas </b></h3><br>
+     <h3><b>Iced Teas </b></h3>
+     <h4>Drink orders take 5-10 minutes to make</h4>
+     <br>
+     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="business" value="ccjae4@gmail.com">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="item_name" value="Milk Tea (Kirk)">
+      <input type="hidden" name="button_subtype" value="products">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="tax_rate" value="10.000">
+      <input type="hidden" name="add" value="1">
+      <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+      <table>
+      <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+        <option value="Small">Small $3.95 USD</option>
+        <option value="Large">Large $4.25 USD</option>
+        <option value="Small Blended">Small Blended $4.50 USD</option>
+        <option value="Large Blended">Large Blended $4.95 USD</option>
+        <option value="Hot">Hot $3.95 USD</option>
+      </select> </td></tr>
+      <tr><td><input type="hidden" name="on1" value="Flavor">Flavor</td></tr><tr><td><select name="os1">
+        <option value="Original Milk Tea">Original Milk Tea </option>
+        <option value="Taro Milk Tea">Taro Milk Tea </option>
+        <option value="Lavender Milk Tea">Lavender Milk Tea </option>
+        <option value="Matcha Milk Tea">Matcha Milk Tea </option>
+        <option value="Almond Milk Tea">Almond Milk Tea </option>
+        <option value="Summer Paradise Iced Tea">Summer Paradise Iced Tea </option>
+        <option value="Lychee Iced Tea">Lychee Iced Tea </option>
+        <option value="Oolong Tea">Oolong Tea </option>
+        <option value="Taiwanese Coffee">Taiwanese Coffee </option>
+        <option value="Milk Chai">Milk Chai </option>
+      </select> </td></tr>
+      <tr><td><input type="hidden" name="on2" value="Extra Requests (no boba, etc.)">Extra Requests (no boba, etc.)</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+      </table>
+      <input type="hidden" name="option_select0" value="Small">
+      <input type="hidden" name="option_amount0" value="3.95">
+      <input type="hidden" name="option_select1" value="Large">
+      <input type="hidden" name="option_amount1" value="4.25">
+      <input type="hidden" name="option_select2" value="Small Blended">
+      <input type="hidden" name="option_amount2" value="4.50">
+      <input type="hidden" name="option_select3" value="Large Blended">
+      <input type="hidden" name="option_amount3" value="4.95">
+      <input type="hidden" name="option_select4" value="Hot">
+      <input type="hidden" name="option_amount4" value="3.95">
+      <input type="hidden" name="option_index" value="0">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      
 
       <h5>Original Milk Boba Tea</h5>
-      <p class="text-grey">The original! Iced black milk tea with black tapioca pearls</p><br>
+      <p class="text-grey">
+      <img src="images/black tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      The original! Iced black milk tea with black tapioca pearls</p>
+      <br>
+    
+        
+        
     
       <h5>Taro Milk Boba Tea</h5>
-      <p class="text-grey">Purple Hawaiian root tea with non-dairy creamer and black tapioca pearls</p><br>
+      <p class="text-grey">
+      <img src="images/taro.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Purple Hawaiian root tea with non-dairy creamer and black tapioca pearls</p>
+      <br>
+     
+        
     
       <h5>Lavender Milk Boba Tea</h5>
-      <p class="text-grey">Black milk tea infused with lavender with black tapioca pearls</p><br>
+      <p class="text-grey">
+      <img src="images/lavender.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Black milk tea infused with lavender with black tapioca pearls</p>
+      <br>
+     
+        
     
       <h5>Matcha Milk Boba Tea</h5>
-      <p class="text-grey">Imported matcha powder with non-dairy creamer and black tapioca pearls</p><br>
+      <p class="text-grey">
+      <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Imported matcha powder with non-dairy creamer and black tapioca pearls</p>
+      <br>
+     
 
       <h5>Almond Milk Boba Tea</h5>
-      <p class="text-grey">Iced black milk tea infused with almond and black tapioca pearls</p><br>
+      <p class="text-grey">
+      <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%"  alt="Sunlight under Leaves">
+      Iced black milk tea infused with almond and black tapioca pearls</p>
+      <br>
+     
+        
 
       <h5>Summer Paradise Boba Tea</h5>
-      <p class="text-grey">Our special Jasmine-Green tea with passion fruit and black tapioca pearls</p><br>
-
+      <p class="text-grey">
+      <img src="images/passionfruit.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Our special Jasmine-Green tea with passion fruit and black tapioca pearls</p>
+      <br>
+     
       <h5>Lychee Iced Boba Tea</h5>
-      <p class="text-grey">Our special Jasmine-Green tea with Lychee and black tapioca pearls</p><br>
+      <p class="text-grey">
+      <img src="images/lychee.jpg" style="width:50px; height:50px; border-radius:50%"alt="Sunlight under Leaves">
+      Our special Jasmine-Green tea with Lychee and black tapioca pearls</p>
+      <br>
+    
+        
+      <h5>Oolong Tea</h5>
+      <p class="text-grey">
+      <img src="images/oolong tea.jpg" style="width:50px; height:50px; border-radius:50%"alt="Sunlight under Leaves">
+      Hot Oolong tea steeped to perfection</p>
+      <br>
+     
+
+      <h5>Taiwanese Coffee</h5>
+      <p class="text-grey">  <img src="images/coffee.jpg" style="width:50px; height:50px; border-radius:50%"alt="Sunlight under Leaves">
+        Coffee infused with ginger and spices served hot
+            </p> 
+
+            
+      <h5>Chai Milk Tea</h5>
+      <p class="text-grey">
+      <img src="images/chai.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Sweet and spicy hot chai milk tea</p>
+      <br>
+     
+    
+      <h5>Ginger Milk Tea</h5>
+      <p class="text-grey">
+      <img src="images/ginger.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Hot black milk tea infused with ginger</p>
+      <br>
+     
+
+        
 
       <h3><b>Smoothies</b></h3><br>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Smoothie (Kirk)">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="shipping" value="10.00">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.50 USD</option>
+          <option value="Large">Large $4.95 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Flavor">Flavor</td></tr><tr><td><select name="os1">
+          <option value="Mango Boba">Mango Boba </option>
+          <option value="Strawberry Boba">Strawberry Boba </option>
+          <option value="Honeydew Boba">Honeydew Boba </option>
+          <option value="Strawberry Lemonade Boba">Strawberry Lemonade Boba </option>
+          <option value="Summer Paradise Boba">Summer Paradise Boba </option>
+          <option value="Hawaiian Freeze Boba">Hawaiian Freeze Boba </option>
+          <option value="Sunny Day Boba">Sunny Day Boba </option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on2" value="Extra requests (e.g. no boba)">Extra requests (e.g. no boba)</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="4.50">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.95">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
 
       <h5>Mango Boba Smoothie</h5>
-      <p class="text-grey">Blended fresh mango with black tapioca pearls</p><br>
+      <p class="text-grey">Blended fresh mango with black tapioca pearls</p>
+      <img src="images/mango.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+      
     
       <h5>Strawberry Boba Smoothie</h5>
-      <p class="text-grey">Blended fresh strawberry with black tapioca pearls</p><br>
+      <p class="text-grey">Blended fresh strawberry with black tapioca pearls</p>
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+     
     
       <h5>Honeydew Boba Smoothie</h5>
-      <p class="text-grey">Blended honeydew with black tapioca pearls</p><br>
+      <p class="text-grey">Blended honeydew with black tapioca pearls</p>
+      <img src="images/honeydew.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+     
     
       <h5>Strawberry Lemonade Boba Smoothie</h5>
-      <p class="text-grey">Blended fresh strawberry with fresh-squeezed lemon juice and black tapioca pearls</p><br>
+      <p class="text-grey">Blended fresh strawberry with fresh-squeezed lemon juice and black tapioca pearls</p>
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/lemons.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+
+        
 
       <h5>Summer Paradise Boba Smoothie</h5>
-      <p class="text-grey">Blended passion fruit with black tapioca pearls</p><br>
+      <p class="text-grey">Blended passion fruit with black tapioca pearls</p>
+      <img src="images/passionfruit.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+     
+        
 
       <h5>Hawaiian Freeze Boba Smoothie</h5>
-      <p class="text-grey">Like a Pina Colada! Blended fresh pineapple with coconut and black tapioca pearls</p><br>
+      <p class="text-grey">Like a Pina Colada! Blended fresh pineapple with coconut and black tapioca pearls</p>
+      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/coconut.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+      
 
       <h5>Sunny Day Boba Smoothie</h5>
-      <p class="text-grey">Blended fresh strawberry and banana with black tapioca pearls</p><br>
+      <p class="text-grey">Blended fresh strawberry and banana with black tapioca pearls</p>
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+      
+        
 
       <h3><b>Juices</b></h3>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Juice (Kirk)">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $5.50 USD</option>
+          <option value="Large">Large $5.95 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Flavor">Flavor</td></tr><tr><td><select name="os1">
+          <option value="Orange, Pineapple, Apple">Orange, Pineapple, Apple </option>
+          <option value="Apple, Carrot, Celery">Apple, Carrot, Celery </option>
+          <option value="Apple, Strawberry, Lemon">Apple, Strawberry, Lemon </option>
+          <option value="Orange, Banana, Strawberry">Orange, Banana, Strawberry </option>
+          <option value="Carrot, Spinach, Orange">Carrot, Spinach, Orange </option>
+          <option value="Carrot, Beet, Orange">Carrot, Beet, Orange </option>
+          <option value="Apple, Spinach, Celery">Apple, Spinach, Celery </option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on2" value="Extra requests (w/ boba, etc.)">Extra requests (w/ boba, etc.)</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="5.50">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="5.95">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
       <p class="text-grey">All our juices are fresh squeezed and made to order!</p><br>
 
-      <h5>Orange, Pineapple, Apple</h5><br>
-
-      <h5>Apple, Carrot, Celery</h5><br>
-
-      <h5>Apple, Strawberry, Lemon</h5><br>
-
-      <h5>Orange, Banana, Strawberry</h5><br>
-
-      <h5>Carrot, Spinach, Orange</h5><br>
-
-      <h5>Carrot, Beet, Orange</h5><br>
-
-      <h5>Apple, Spinach, Celery</h5><br>
-
-      <h3><b>Hot Beverages</b></h3><br>
-
-      <h5>Hot Original Milk Tea</h5>
-      <p class="text-grey">Hot black milk tea</p><br>
+      <h5>Orange, Pineapple, Apple</h5>
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
     
-      <h5>Hot Lavender Milk Tea</h5>
-      <p class="text-grey">Hot black milk tea infused with lavender</p><br>
+        
+
+      <h5>Apple, Carrot, Celery</h5>
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%"alt="Sunlight under Leaves">
+      <img src="images/carrot.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/celery.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+      
+        
+
+      <h5>Apple, Strawberry, Lemon</h5>
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/lemons.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+     
+      <h5>Orange, Banana, Strawberry</h5>
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+     
+
+      <h5>Carrot, Spinach, Orange</h5>
+      <img src="images/kale.jpg" style="width:50px; height:50px; border-radius:50%"alt="Sunlight under Leaves">
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/carrot.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+     
+      <h5>Carrot, Beet, Orange</h5>
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/carrot.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/beet.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
+     
+     
+      <h5>Apple, Spinach, Celery</h5>
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/celery.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/kale.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <br>
     
-      <h5>Hot Chai Milk Tea</h5>
-      <p class="text-grey">Sweet and spicy hot chai milk tea</p><br>
-    
-      <h5>Hot Ginger Milk Tea</h5>
-      <p class="text-grey">Hot black milk tea infused with ginger</p><br>
-
-      <h5>Hot Matcha Milk Tea</h5>
-      <p class="text-grey">Hot tea made from imported matcha powder with non-dairy creamer</p><br>
-
-      <h5>Hot Oolong Tea</h5>
-      <p class="text-grey">Hot Oolong tea steeped to perfection</p><br>
-
-      <h5>Hot Taiwanese Coffee</h5>
-      <p class="text-grey">Coffee infused with ginger and spices served hot</p>
+     
+     
 
     </div>  
   </div>

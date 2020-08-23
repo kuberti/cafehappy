@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
-    color: #777;
+    color: #000;
     line-height: 1.8;
 }
 
@@ -65,7 +66,7 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="top">
+<div class="top wide">
   <div class="bar" id="myNavbar">
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -79,9 +80,9 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 display-container opacity-min" id="home">
+<div class="bgimg-1 display-container" id="home">
   <div class="display-middle" style="white-space:nowrap;">
-    <span class="center padding-large black xlarge wide animate-opacity"><span class="hide-small">CAFE HAPPY: </span>SEATTLE</span>
+    <span class="center padding-large black xxxlarge wide"><span class="hide-small">CAFE HAPPY: </span>SEATTLE</span>
   </div>
 </div> 
 
@@ -102,104 +103,853 @@ body, html {
     <div id="Food" class="container menu padding-48 card">
       <h3><b>Snacks</b></h3><br>
       <h5>Veggie Buns</h5>
-      <p class="text-grey">Cabbage, Carrots, Rice Noodle, Mushroom</p><br>
+      <p class="text-grey">Cabbage, Carrots, Rice Noodle, Mushroom</p>
+      <img src="images/soymeatbuns.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Veggie Buns (1 order = 2 pcs)">
+        <input type="hidden" name="amount" value="3.50">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
     
       <h5>Soy Meat Buns</h5>
-      <p class="text-grey">Soy Meat, Cabbage, Carrots with house sauce</p><br>
+      <p class="text-grey">Soy Meat, Cabbage, Carrots with house sauce</p>
+      <img src="images/soymeatbuns.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Soy Meat Buns (1 order = 2 pcs)">
+        <input type="hidden" name="amount" value="3.50">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
     
-      <h5>Tea Leaf Egg</h5>
-      <p class="text-grey">Hard-boiled egg infused with tea leaves</p><br>
-
       <h3><b>Bentos</b></h3><br>
     
       <h5>Monday</h5>
-      <p class="text-grey">Spicy Club Fries</p><br>
+      <p class="text-grey">Spicy Club Fries</p>
+      <img src="images/num19.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#19 Spicy Club Fries">
+        <input type="hidden" name="item_number" value="19">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>Wednesday</h5>
-      <p class="text-grey">Soy Chicken with Broccoli</p><br>
+      <p class="text-grey">Soy Chicken with Broccoli</p>
+      <img src="images/soychicken.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#27 Soy Chicken with Broccoli">
+        <input type="hidden" name="item_number" value="27">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
 
       <h5>Thursday</h5>
-      <p class="text-grey">Ma Po Tofu</p><br>
+      <p class="text-grey">Ma Po Tofu</p>
+      <img src="images/mapotofu.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="#5 Ma Po Tofu">
+        <input type="hidden" name="item_number" value="5">
+        <input type="hidden" name="amount" value="9.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
     </div>
 
     <div id="Drinks" class="container menu padding-48 card">
-      <h3><b>Boba Iced Teas</b></h3><br>
+      <h3><b>Boba Iced Teas</b></h3>
+      <h4>Drink orders take 5-10 minutes to make</h4>
+      <br>
     
       <h5>Just Jasmine</h5>
-      <p class="text-grey">Jasmine iced tea with sweetner</p><br>
+      <p class="text-grey">
+      <img src="images/jasmine.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Jasmine iced tea with sweetner</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Just Jasmine">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.75 USD</option>
+          <option value="Large">Large $3.95 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="3.75">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="3.95">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>Lil' Lychee</h5>
-      <p class="text-grey">Lychee flavor with jasmine tea</p><br>
+      <p class="text-grey">
+      <img src="images/lychee.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Lychee flavor with jasmine tea</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Lil' Lychee">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="3.95">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.25">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>Summer Paradise</h5>
-      <p class="text-grey">Passion fruit flavor with jasmine tea</p><br>
+      <p class="text-grey">
+      <img src="images/passionfruit.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Passion fruit flavor with jasmine tea</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Summer Paradise">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="3.95">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.25">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>Presto Peach</h5>
-      <p class="text-grey">Peach flavor with jasmine tea</p><br>
+      <p class="text-grey">
+      <img src="images/peach.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Peach flavor with jasmine tea</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Presto Peach">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="3.95">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.25">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
 
       <h5>Honey Green</h5>
-      <p class="text-grey">Freshly brewed jasmine green tea with honey</p><br>
+      <p class="text-grey">
+      <img src="images/green tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Freshly brewed jasmine green tea with honey</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Honey Green">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="4.00">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
+      
 
       <h3><b>Boba Milk Teas</b></h3><br>
     
       <h5>Original (OG)</h5>
-      <p class="text-grey">Freshly brewed black tea made with non-dairy creamer</p><br>
+      <p class="text-grey">
+      <img src="images/black tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Freshly brewed black tea made with non-dairy creamer</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Original (OG)">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="3.95">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.25">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>Lavishly Lavender</h5>
-      <p class="text-grey">Lavender flavoring with brewed black tea</p><br>
+      <p class="text-grey">
+      <img src="images/lavender.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Lavender flavoring with brewed black tea</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Lavishly Lavender">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="3.95">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.25">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>Tasty Taro</h5>
-      <p class="text-grey">Non-dairy creamer with taro flavoring</p><br>
+      <p class="text-grey">
+      <img src="images/taro.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Non-dairy creamer with taro flavoring</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Tasty Taro">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="3.95">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.25">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>All About Almond</h5>
-      <p class="text-grey">Almond milk with freshly brewed black tea</p><br>
+      <p class="text-grey">
+      <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Almond milk with freshly brewed black tea</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="All About Almond">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="4.00">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
 
       <h5>Hella Honey</h5>
-      <p class="text-grey">Original milk tea with honey</p><br>
+      <p class="text-grey">
+      <img src="images/honey.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Original milk tea with honey</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Hella Honey">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.20 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="4.20">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
 
       <h5>Macho Matcha</h5>
-      <p class="text-grey">Matcha powder with non-dairy creamer and natural sweetner</p><br>
+      <p class="text-grey">
+      <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Matcha powder with non-dairy creamer and natural sweetner</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Lavishly Lavender">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.20 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="4.20">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
 
       <h5>Ginger Milk Tea</h5>
-      <p class="text-grey">Ginger with original milk tea</p><br>
+      <p class="text-grey">
+      <img src="images/ginger.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      Ginger with original milk tea</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Lavishly Lavender">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="4.00">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="4.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
 
       <h3><b>Boba Smoothies</b></h3><br>
     
       <h5>Mango Mango</h5>
-      <p class="text-grey">Real mango blended with ice</p><br>
+      <p class="text-grey">Real mango blended with ice</p>
+      <img src="images/mango.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.95 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="4.95">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="5.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
     
       <h5>Sunny Day</h5>
-      <p class="text-grey">Organic banana blended with strawberry</p><br>
-    
+      <p class="text-grey">Organic banana blended with strawberry</p>
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $5.25 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="5.25">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="5.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
+     
       <h5>Hawaiian Freeze</h5>
-      <p class="text-grey">Pineapple, Coconut, Lychee</p><br>
+      <p class="text-grey">Pineapple, Coconut, Lychee</p>
+      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/coconut.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $5.25 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="5.25">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="5.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
+    
     
       <h5>Strawberry Lemonade</h5>
-      <p class="text-grey">Get it? No? Nvm.</p><br>
+      <p class="text-grey">Get it? No? Nvm.</p>
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/lemons.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $5.25 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="5.25">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="5.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
 
-      <h3><b>Organic Juice & Smoothies</b></h3><br>
+
+      <h3><b>Organic Smoothies</b></h3><br>
     
-      <h5>Sunrise Juice</h5>
-      <p class="text-grey">Orange, Pineapple, Apple</p><br>
+      <h5>Sunrise</h5>
+      <p class="text-grey">Orange, Pineapple, Apple</p>
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $6.50 USD</option>
+          <option value="Large">Large $6.75 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="6.50">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="6.75">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
     
-      <h5>ABC... and D Juice</h5>
-      <p class="text-grey">Apple, Beet, Carrot, Dragonfruit</p><br>
-    
-      <h5>Sunset Juice Juice</h5>
+      <h5>Sunset</h5>
       <p class="text-grey">Orange, Banana, Strawberry</p><br>
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $6.50 USD</option>
+          <option value="Large">Large $6.75 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="6.50">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="6.75">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
     
       <h5>Pearfection Smoothie</h5>
-      <p class="text-grey">Pear, Apple, Orange, Banana, Honey</p><br>
+      <p class="text-grey">Pear, Apple, Orange, Banana, Honey</p>
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/pear.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $7.00 USD</option>
+          <option value="Large">Large $7.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="7.00">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="7.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
 
       <h5>Green Future Smoothie</h5>
-      <p class="text-grey">Kale, Celery, Spinach, Apple, Cucumber</p><br>
+      <p class="text-grey">Kale, Celery, Spinach, Apple, Cucumber</p>
+      <img src="images/celery.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/kale.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/cucumber.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $7.00 USD</option>
+          <option value="Large">Large $7.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="7.00">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="7.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
 
       <h5>Kirkland Smoothie</h5>
-      <p class="text-grey">Banana, Avocado, Vegan Protein Powder, Almond Butter, Coconut Water</p><br>
+      <p class="text-grey">Banana, Avocado, Vegan Protein Powder, Almond Butter, Coconut Water</p>
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/avocado.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/almond butter.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $7.00 USD</option>
+          <option value="Large">Large $7.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="7.00">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="7.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
 
       <h5>Hulk Smoothie</h5>
-      <p class="text-grey">Matcha Powder, Almond Milk, Banana, Avocado, Flax Seed, Chia Seed, Honey </p><br>
+      <p class="text-grey">Matcha Powder, Almond Milk, Banana, Avocado, Flax Seed, Chia Seed, Honey </p>
+      <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/avocado.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="business" value="ccjae4@gmail.com">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Mango Mango">
+        <input type="hidden" name="button_subtype" value="products">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="tax_rate" value="10.000">
+        <input type="hidden" name="add" value="1">
+        <input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $7.00 USD</option>
+          <option value="Large">Large $7.50 USD</option>
+        </select> </td></tr>
+        <tr><td><input type="hidden" name="on1" value="Additional Info (no boba, etc.">Additional Info (no boba, etc.</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        </table>
+        <input type="hidden" name="option_select0" value="Small">
+        <input type="hidden" name="option_amount0" value="7.00">
+        <input type="hidden" name="option_select1" value="Large">
+        <input type="hidden" name="option_amount1" value="7.50">
+        <input type="hidden" name="option_index" value="0">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      <br>
+     
     </div>  
   </div>
 </div>

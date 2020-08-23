@@ -13,7 +13,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
-    color: #777;
+    color: #000;
     line-height: 1.8;
 }
 
@@ -31,7 +31,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("images/coverpic3cf.jpg");
+    background-image: url("images/classycoverpic2.JPG");
     min-height: 100%;
     height: 400px;
     width: 100%
@@ -61,6 +61,8 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="top">
+  <div class = "bgmig-1 display-container opacity-min">
+    <div class = "wide animate-opacity">
   <div class="bar" id="myNavbar">
     <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
@@ -75,84 +77,18 @@ body, html {
     </a>
   </div>
 </div>
+</div>
+</div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 display-container opacity-min" id="home">
+<div class="bgimg-1 display-container" id="home">
   <div class="display-middle" style="white-space:nowrap;">
-    <span class="center padding-large black xlarge wide animate-opacity">CAFE HAPPY</span>
+    <span class="center padding-large black xxxlarge wide">CAFE HAPPY</span>
   </div>
 </div>
-
-<!-- Container (About Section) -->
-<div class="content container padding-64" id="about">
-  <h3 class="center">ABOUT</h3>
-  <p class="center">Cafe Happy was founded in 1996.</p>
-  <div class="row">
-    </div>
-    </div>
-
-
-<!-- Container (Portfolio Section) -->
-<div class="content container padding-64" id="gallery">
-  <h3 class="center">GALLERY</h3>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="row-padding center">
-    <div class="col m3">
-    <img src="images/drinks1.jpg" style="width:100%"  alt="Sunlight under Leaves">
-
-    </div>
-
-    <div class="col m3">
-    <img src="images/foodpic1.jpg" style="width:100%" alt="Sunlight under Leaves">
-    </div>
-
-    <div class="col m3">
-    <img src="images/meatbuns1.jpg" style="width:100%" alt="City of Los Angeles">
-    </div>
-
-    <div class="col m3">
-    <img src="images/drink.jpg" style="width:100%" alt="Vines">
-    </div>
-  </div>
-
-  <div class="row-padding center section">
-    <div class="col m3">
-    <img src="images/food3.jpg" style="width:100%" "height:100%" alt="Snow on the Rooftop">
-    </div>
-
-    <div class="col m3">
-     <img src="images/friedrice.jpg" style="width:100%"  alt="Tree in the Sunset">
-
-    </div>
-
-    <div class="col m3">
-    <img src="images/ricenoodle.jpg" style="width:100%" alt="Cactus in the Sunset">
-    </div>
-
-    <div class="col m3">
-    <img src="images/seattlestore.jpg" style="width:100%" alt="Beach Tree">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click
-<div id="modal01" class="modal black" onclick="this.style.display='none'">
-  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="modal-content animate-zoom center transparent padding-64">
-    <img id="img01" class="image">
-    <p id="caption" class="opacity large"></p>
-  </div>
-</div>
--->
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 display-container opacity-min" id = "contact">
-  <h3  class="center">CONTACT:</h3>
-  <h2 class="center"> Phone: (425) 822-9696</h2>
 
   <div class="content container padding-64" id="menu">
-      <h3 class="center">MENU</h3>
+      <h3 class="center padding-large xxxlarge wide">MENU</h3>
 
  <div class="row">
       <div class="col m6 center padding-large">
@@ -170,7 +106,76 @@ body, html {
           
   </div>
   </div>
-</div>  
+  <div class="bgimg-3 display-container center" id = "contact">
+  <h3  class="center padding-large xxxlarge wide">CONTACT:</h3>
+  <a class = "center xxlarge" href="tel:4258229696">Phone: (425) 822-9696</a> <br>
+  <a class = "center" href="https://www.instagram.com/cafehappy96/" ><img src="images/instagram.webp" style="width:5%" "height:5%" class="round image" alt="Cafe Happy Photo"></a>
+  <a class = "center" href="https://www.facebook.com/cafehappy.kirk/" ><img src="images/facebook.png" style="width:5%" "height:5%" class="round image" alt="Cafe Happy Photo"></a>
+  </div>
+ 
+<!-- Container (Portfolio Section) -->
+<div class="content container padding-64" id="gallery">
+  <h3 class="center padding-large xxxlarge wide">GALLERY</h3>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3">
+    <img src="images/drinks1.jpg" style="width:100%"  alt="Sunlight under Leaves">
+    </div>
+
+    <div class="col m3">
+    <img src="images/foodpic1.jpg" style="width:100%" alt="Sunlight under Leaves">
+    </div>
+
+    <div class="col m3">
+    <img src="images/meatbuns1.jpg" style="width:100%" alt="City of Los Angeles">
+    </div>
+
+    <div class="col m3">
+    <img src="images/drink.jpg" style="width:100%" alt="Vines">
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3">
+    <img src="images/food3.jpg" style="width:100%"  alt="Snow on the Rooftop">
+    </div>
+
+    <div class="col m3">
+     <img src="images/friedrice.jpg" style="width:100%"  alt="Tree in the Sunset">
+    </div>
+
+    <div class="col m3">
+    <img src="images/ricenoodle.jpg" style="width:100%" alt="Cactus in the Sunset">
+    </div>
+
+    <div class="col m3">
+    <img src="images/seattlestore.jpg" style="width:100%" alt="Beach Tree">
+    </div>
+  </div>
+
+  <div class="content container padding-64" id="about">
+  <h3 class="center padding-large xxxlarge wide">ABOUT</h3>
+  <p class="center">Cafe Happy is a vegetarian food and bubble tea shop. It offers boba teas, smoothies, fresh blended juices, vegeterian food and bentos. </p>
+  <p class = "center">Cafe Happy has two locations: One right by the edge of the vibrant UW community, while the other is nestled in Downtown Kirkland by the waterfront. </p>
+<p class = "center"> Cafe Happy was established by the current owner Chiu-Hau's uncle and aunt in 1996. Chiu-Hau Chang started managing his uncle's bubble tea shop after he graduated from the UW School of Lanscape Design. As the second geneartion to manage Cafe Hapy, Chiu-Hau hopes to keep his uncles legacy alive. </p>
+<p class = "center" >Stop by any of the two locations to try the food & drink and feel happy!</p>
+  <div class="row">
+    </div>
+    
+
+
+<!-- Modal for full size images on click
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+-->
+
+<!-- Third Parallax Image with Portfolio Text -->
   
 <script>
 function openMenu(evt, menuName) {
