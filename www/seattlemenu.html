@@ -100,156 +100,693 @@ body, html {
     </div>
 
     <div id="Food" class="container menu padding-48 card">
-      <h3>Note: Our Seattle location is currently closed due to COVID-19. We will keep you updated on the situation, but in the meantime, if you are craving Cafe Happy, please check out our Kirkland location!</h3>
+      <h3>We're open! With new cleaning and safety protocols, we're continuing to serve you throught this difficult time!</h3>
       <h3><b>Snacks</b></h3><br>
       <h5>Veggie Buns</h5>
       <p class="text-grey">Cabbage, Carrots, Rice Noodle, Mushroom</p>
-      <img src="images/soymeatbuns.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/soymeatbuns.JPG" style="width:100px; height:100px; border-radius:50%" alt="Veggie Buns">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Count">Count</td></tr><tr><td><select name="os0">
+          <option value="1 Bun">1 Bun $2.50 USD</option>
+          <option value="2 Buns">2 Buns $4.50 USD</option>
+          <option value="10 Buns">10 Buns $20.00 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
     
       <h5>Soy Meat Buns</h5>
       <p class="text-grey">Soy Meat, Cabbage, Carrots with house sauce</p>
-      <img src="images/soymeatbuns.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/soymeatbuns.JPG" style="width:100px; height:100px; border-radius:50%" alt="Soy Meat Buns">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Count">Count</td></tr><tr><td><select name="os0">
+          <option value="1 Bun">1 Bun $2.50 USD</option>
+          <option value="2 Buns">2 Buns $4.50 USD</option>
+          <option value="10 Buns">10 Buns $20.00 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIH6QYJKoZIhvcNAQcEoIIH2jCCB9YCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAfcdFkpLPx2Axx2z02f3NkmzF+/inwZzs/Rm9HhxI6NGsV5a4GKErAFmuH1zApk6kosLoF79Fww7UOJ0fMIwyCpCyDEy4bFGWJK/3ZpSq54uqOCJWh7euCaQRafDBLmY/AVbU1EleobMFcCL4/FxISumceFjQF2TZ54AZNSaSm+TELMAkGBSsOAwIaBQAwggFlBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECIHBriZbt52ZgIIBQMxnoZKl5e9hc3GCvlroZDkIXIEForqH0Kpwweqh5TZSdFQL6g0MR2Jm0znJIqU4yJNapcJArpKg8RabQ9hsMbcQu1V5k60TnWDAxrmPvfe8hIioTsiBLMnlOw6JH4irqCHBkZzPw5kRvj6gm7kZrT4JHEM16U4br9VTFCoL8yABHELN7LHta51/G1+XNi1/k95YCpEkqfgjQpf9c6PyRqCNZFyz5VfXn3yn88kAi2Gk90gcpaZim9xvUjDXfls1WnCAoAdTB2M3DzyUr5UT/Lc4GGOH6RHIFST049lC9BBEmbuzLjLTuWCsVjQn/xuXRP21QhVxeEMn5lrrv9jr/GISt/PzAKfgw2camJox/uEA4+Tcsp6Cyb12JqcwN5XiqEJA8opKK7HvZGv9Pe/G+uwEOZicykpU20m1Ajp6FGP1oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjEwMTAxMDQwNTE1WjAjBgkqhkiG9w0BCQQxFgQUDUCoikAPyw5l/UeS73Nk5F8VORMwDQYJKoZIhvcNAQEBBQAEgYCQZTMjX19AiYtl+B8EjXVwVCSfQOKk66cCr3JnUOdeJ+q1zhSDFjVOvS8Cu4SgQwHG49tKhvTcatWF30VzpumcZcixTwLJepPyrIz9T5FLdrAvOgCMYN8h5MZ5I0QCgJsdWBVl8BbPbJFjW4P2q2eFgUxHQn2SH3r82nUG9IbuYg==-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
 
-      <h3><b>Bentos</b></h3><br>
-    
-      <h5>Monday</h5>
-      <p class="text-grey">Spicy Club Fries</p>
-      <img src="images/num19.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves"><br>
-    
-      <h5>Wednesday</h5>
-      <p class="text-grey">Soy Chicken with Broccoli</p>
-      <img src="images/soychicken.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves"><br>
+    <h3><b>Bentos</b></h3><br>
+    <h5>#27 Soy Chicken with Brococli</h5>
+    <p class="text-grey">Soy Meat with mushroom paste sauce with broccoli and carrots</p>
+    <img src="images/soychicken.JPG" style="width:100px; height:100px; border-radius:50%" alt="Soy Meat with Broccoli">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      <br>
 
-      <h5>Thursday</h5>
-      <p class="text-grey">Ma Po Tofu</p>
-      <img src="images/mapotofu.JPG" style="width:100px; height:100px; border-radius:50%" alt="Sunlight under Leaves"><br>
-    
+      <h5>#19 Spicy Club Fries</h5>
+    <p class="text-grey">Soy ham strips with red bean paste sauce, zucchini and carrots</p>
+    <img src="images/num19.JPG" style="width:100px; height:100px; border-radius:50%" alt="Spicy club fries">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      <br>
+      
+
+    <h5>#5 Ma Po Tofu</h5>
+    <p class="text-grey">Fresh tofu pieces in a bean paste sauce with crushed soy meat and peas</p>
+    <img src="images/mapotofu.JPG" style="width:100px; height:100px; border-radius:50%" alt="Ma Po Tofu">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      <br>
+      
     </div>
 
     <div id="Drinks" class="container menu padding-48 card">
-      <h3>Note: Our Seattle location is currently closed due to COVID-19. We will keep you updated on the situation, but in the meantime, if you are craving Cafe Happy, please check out our Kirkland location!</h3>
+      <h3>We're open! With new cleaning and safety protocols, we're continuing to serve you throught this difficult time!</h3>
       <h3><b>Boba Iced Teas</b></h3><br>
     
       <h5>Just Jasmine</h5>
       <p class="text-grey">Jasmine iced tea with sweetner</p>
-      <img src="images/jasmine.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/jasmine.jpg" style="width:50px; height:50px; border-radius:50%" alt="Jasmine">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.75 USD</option>
+          <option value="Large">Large $3.95 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>        
+        <br>
+        
+    
     
       <h5>Lil' Lychee</h5>
       <p class="text-grey">Lychee flavor with jasmine tea</p>
-      <img src="images/lychee.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
-    
+      <img src="images/lychee.jpg" style="width:50px; height:50px; border-radius:50%" alt="Lychee">
+
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHsQYJKoZIhvcNAQcEoIIHojCCB54CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCD4knGoK7oWK1lj/4NMNILGUyGFPhX1oGYYbBtFrXBkFKRWZITPqDmrUFnTTr9e24/ftcTkFuoe7Nwp0u3bba1MFW/5Wq6RlKEqZPDze7nxxyXJtVjyAPvw68QE+CVOztYWLYa35ApOwYQrDruODWpGTMpK3YESZoX+iVyip/HpzELMAkGBSsOAwIaBQAwggEtBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECMvWTPzBVgyVgIIBCGWrNZgYM3ke3G/Kw26mGjF0kSvcvob+O60cCojTD/zbI4AAnAkrAgfDBRk+yJMZ+BH5FqJ7BM7lEBtDdqIGJF6oku0EqsMdjdmgLO1M3BQb6rkt57zOQioyr7CBNiw9ePXrxkjViil69uNLCpc+kPr1AOZFFfNqJKHmotDlNGjkM+8bcXlqb6GguWHSdcyFrkGkkg0PYRUjzbXDmFIAIgl+kJJqQourVTPMuuksY5fAj24fSvtX59RyrpYCKcNx0AA4ZfbrWKB47xN7DWjOLsm2qRslFExmhesJjNf8FSNlY9gF2vLqR4QqjbLq3T4EJKcPgB0U5hLuf57lChja7x8XL65E1/ZbyKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTIzMTIwMzI1OVowIwYJKoZIhvcNAQkEMRYEFHzQDx4yuzy8Et7GyKMOQCI1zCdCMA0GCSqGSIb3DQEBAQUABIGAoN79gIuDnPIlwqrEoiMjg0ukDqqvwIUrfq3NM5ckTDwocsghl7I2Ch1OlDHZSVXaJM0ANGwC3k+icdtBch1NFWoOkuODHtimsWmRgsnuzwh6+y0PYqKI8mnE2L0cMiabfZWHXjf1vglEvWh9mmib6d0a80c0OY+C2Hownf/hta0=-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <br>
+        
+
+
+      <h5>Black Tea</h5>
+      <p class="text-grey">Freshly brewed black tea</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.75 USD</option>
+          <option value="Large">Large $3.95 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" s src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <br>
+        
+
+  
       <h5>Summer Paradise</h5>
       <p class="text-grey">Passion fruit flavor with jasmine tea</p>
-      <img src="images/passionfruit.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/passionfruit.jpg" style="width:50px; height:50px; border-radius:50%" alt="Passionfruit">
+
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <br>    
     
+ 
+        
       <h5>Presto Peach</h5>
       <p class="text-grey">Peach flavor with jasmine tea</p>
-      <img src="images/peach.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/peach.jpg" style="width:50px; height:50px; border-radius:50%" alt="Peach">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <br>
+
+    
 
       <h5>Honey Green</h5>
       <p class="text-grey">Freshly brewed jasmine green tea with honey</p>
-      <img src="images/green tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/green tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Green tea">
+
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHuQYJKoZIhvcNAQcEoIIHqjCCB6YCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCoh18z3w5mfSL1rPjiS7I6nyqvDeAoESVimRNVQy13q+aVI2q3bzflKwJ2QL+oMoOYuyUxPL2P17Z9Fnm/vSEDYvMWn20b1a8nhxPbKIU6CEkrA7Ao3aCKtiFja4xoDD6xOMlqwURbYsZe1UyIb47ioz412qOgt+iHkxs7vzi0SDELMAkGBSsOAwIaBQAwggE1BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECNTjtHrSTCySgIIBEKpTL78EqrAGVw/i8cE9O/j2Ro2UzI5BkVViuNXXcXvdkCurdhERIZmn2/FJsYVOKztfSmYMp7H61vxXZB0NjzUvut68sEcMcSdZgx/i9hsT+hL4NzwNo+tnhVTCPHKmQF9ilKCiqkCAZ9G3JIlOhy7Kfnbct/GRlHf0Hrdyp/i64Pdh0tXsr5KNRgGeD2JruCx1r4JXF/hqcLOcOM6DsPfG1ix93ZSiIdd0DdMIerXpBwoKJILC2NBkLgQ85b8fiiCF5wBi70t4gCCpiwETnGAKHnYcxqo2vRRyqLN+pSpY1EHYKNx9XZr3/IoL5zXoiH3NYIKCCvlEdNe2CCEuaYQsKeO6VMdM2v/kSKOVPABsoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAxMjMxMjAzNTMwWjAjBgkqhkiG9w0BCQQxFgQU3w7CHp5aUf1prgqYjItGmgctVgMwDQYJKoZIhvcNAQEBBQAEgYCdryEMqNA2qoGXmGYTGJ2/hdysIYeuA37w5Q459pJ0bRR97VbgoAsaee6xSydRdCl0ysD2A/kIDtXnnNOUERC9UMeFU5RUAFkqdKZwe+9aRgZliD0fMr/Maw1HD5bQga3NY8cITwvUUE2zWT9Sy2+mO/WGNjkRb5BwC54eSRtxrg==-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <br>
+
+      <h5>Grapefruit</h5>
+      <p class="text-grey">Grapefruit juice with jasmine tea</p>
+      <img src="images/grapefruit.jfif" style="width:50px; height:50px; border-radius:50%" alt="Grapefruit"><br>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <br>
+      
+
+      <h5>Sea Salt Cream</h5>
+      <p class="text-grey">Sea salt cream with green tea</p>
+      <img src="images/sea salt cream.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sea Salt Cream"><br>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHuQYJKoZIhvcNAQcEoIIHqjCCB6YCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCm6lXWC3iKc4VpQHHoI5e9bbya0tsnRPF7Ff6pXIdziVLhRRpVnZP77Ha2QLPFOOc7WSjkUbcVSgCB/bZWW/OSKMZysLBALRWiW+/UR1KY3YVfxLuTyw8oGVRTp4JmQrPgkYHxLbKONaJXrxrBruCLmxsa3VwG6RMR+/JPViwCiTELMAkGBSsOAwIaBQAwggE1BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECN5+WhytBTw/gIIBEMw1k4ycnE9hCUoZEJzh//xWqLm3vQPoN35dwFfaBbJM06AjDf69YcwxSaOJBJTGnHZLSL88ngUSYd4r81hVZ2F2eIlRftounldQbhwCn1+RoEKu0UdAYw6UP+7Xha4o6gJIa+4fup/rBNAmgvn9UXlBbleG/GDkwgUY90ghAfj79GnPbnyYPHBGCGoGhzwE7gOld8kbkzqHqlq16/O476AF6HW71+PKZlPW+wZj25Tcou1OYnPgYyZGFgrSNe4rB6DEc/uJE3Jqekh+ODMMoQvIoac2li3/O1JDQhNQYdaN5arUSFNtCiVCdOls714oXQWjZMhgOGFwM8eDgc5MsGrRHGtm3jFA0gEB/6EqPoa8oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAxMjMxMjAzNjI0WjAjBgkqhkiG9w0BCQQxFgQUQmuyYbZCMZR0V4eIuCs5gOLfAxgwDQYJKoZIhvcNAQEBBQAEgYCoWo6LuWyNz+cufpl4qfRmz1BliY9byll1/fRG0/cZH7bDrXqBdVXhf1wM97XQiMh4YMYi1E86TEB/TSYEtvbhqD9NjVGLTUdNATaQ7sRqtmsDazwdcGlv8lOiP/Yp38YGrq1ENlTfiHYI/4MDRfnHnAiC8o/FnABUrza+mD+iYg==-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <br>
+        
+
+  
+        
 
       <h3><b>Boba Milk Teas</b></h3><br>
     
       <h5>Original (OG)</h5>
       <p class="text-grey">Freshly brewed black tea made with non-dairy creamer</p>
-      <img src="images/black tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/black tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Black tea">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+        
     
       <h5>Lavishly Lavender</h5>
       <p class="text-grey">Lavender flavoring with brewed black tea</p>
-      <img src="images/lavender.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/lavender.jpg" style="width:50px; height:50px; border-radius:50%" alt="Lavender">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+        
     
       <h5>Tasty Taro</h5>
       <p class="text-grey">Non-dairy creamer with taro flavoring</p>
-      <img src="images/taro.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
-    
-      <h5>All About Almond</h5>
-      <p class="text-grey">Almond milk with freshly brewed black tea</p>
-      <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/taro.jpg" style="width:50px; height:50px; border-radius:50%" alt="Taro">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $3.95 USD</option>
+          <option value="Large">Large $4.25 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHsQYJKoZIhvcNAQcEoIIHojCCB54CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYB70C5Uvzu4epq8k4A4TCBRdXjqMoGvltHx8T84wd60uGjWOljDwJHGAe11xrtdAcJHz76i1Kv7uydcNk7fdZ4hbnhiHjWKgOi9506QRHbiSVAp3kGI0rTBMToEbnduCIJo029EJnl2Iu3Aw5vVirkyOSOUogyVc8pEvarT7vrsizELMAkGBSsOAwIaBQAwggEtBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECM+YFZUNQtxJgIIBCNFH1OhVXMPqaseNJpORu3O/ag7YXTxPkajSn2+XNi2ZVdYlWMdUkAX7BXk7S6K3MHYJPWFxy5J+fD8DA/wnnzziklw481zh61+1vRpBVpq7lA1aSngh6QZemjceR1IChG36t0KjMRcRwqDFfxZFJa7nEQDDEOr4vJ1K5rwtCawIrDmppEfkVzscR1nv1rmlSbP/JPEgpyRe7z92OGhoEYS7gHcBJ+rSsaGBbV+9pFPMitZH3+xkdxBS+pfw3M++PMTReuxnUn455Gm5lUfTJvOk326eckiaBOkZToQbUUlBBR1RLPB/Fmzo6GBAkxsLGe2CRUmw/+FyCX4Y92P5+hVqryZTaVpY4aCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTIzMTIwMzg1NVowIwYJKoZIhvcNAQkEMRYEFCoz2chCUERZc/ek2ArL4IMh5uq6MA0GCSqGSIb3DQEBAQUABIGAhb1p8hx+MH3w9gqWkf0AZI8mcbJblzatoEU2ZikYw9A3uklo/1Jhb4IrBtHnLswq87akWevIorlZRXx69WrMNDhmJuhCT5T56O6kRozGku2ccV2yAxiePG05bqTOBPldF6uCWDJqKuciKPO2G64AG30riLbR4PFITth1K2TqOTs=-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
 
-      <h5>Hella Honey</h5>
-      <p class="text-grey">Original milk tea with honey</p>
-      <img src="images/honey.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
-
-      <h5>Macho Matcha</h5>
-      <p class="text-grey">Matcha powder with non-dairy creamer and natural sweetner</p>
-      <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <h5>Chocolate Milk Tea</h5>
+      <p class="text-grey">Chocolate flavoring with original milk tea</p>
+      <img src="images/chocolate.jfif" style="width:50px; height:50px; border-radius:50%" alt="Chocolate">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
 
       <h5>Ginger Milk Tea</h5>
       <p class="text-grey">Ginger with original milk tea</p>
-      <img src="images/ginger.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/ginger.jpg" style="width:50px; height:50px; border-radius:50%" alt="Ginger">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
 
+      <h5>All About Almond</h5>
+      <p class="text-grey">Almond milk with freshly brewed black tea</p>
+      <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%" alt="Almond">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.00 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+        
+
+      <h5>Hella Honey</h5>
+      <p class="text-grey">Original milk tea with honey</p>
+      <img src="images/honey.jpg" style="width:50px; height:50px; border-radius:50%" alt="Honey">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.20 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHuQYJKoZIhvcNAQcEoIIHqjCCB6YCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCum8nQQNCbv0RVP3l9tKgblXaym2YdzjF67OzmaLEFw/iOS/QyGxaLL6LueLKA+7Xrnb5Iu3Aom/OWHas6NmkXQMcXjVlr1oK26Z8zzGtGwz/Bh8OL1n/BKEN0eJoCaos9oAMjwE4X0sN/Th9l5YgfSid/pFovi0HMoJjaQaEPzTELMAkGBSsOAwIaBQAwggE1BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECDJsc+tZL4vJgIIBEOm5rCUF4VS79+ZDBvzqyMGAKW0RynJGKyXkGawAaxTCgzK1YODI1tMeMrdGYy0VNrN6MQY2vgFHlGBjv3LcS//D08OdNNPEunHUqaqAgoGlMg+//Eh4RCjYx02Rxmr0dLjJy207eF/nZq1KFVC7O57Yj6MqnJHmuvpjr1QBOXETGz09Z9LTeKxd4K0pFG/DpEQpCqzoeH250Qug1JM8JjmkPx/8k8crevktCCDGe8NM4gzJUTJ4mQhdDfToyO3A+QpJKWg2yDn7dIiQN3wwyh7OGp5rzZK5xHzEGgfGHN3SIct/goJUzksJKz8JbHbeEalVu2QpayZiHvwxQ59CeUyINBQLnLqXXjhZQp65AuX0oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAxMjMxMjA0MjE1WjAjBgkqhkiG9w0BCQQxFgQUNXSDKAQRHkI8RPkb0N01soTuKBswDQYJKoZIhvcNAQEBBQAEgYARZ0KmlNevy0Xl+a0CJw1eIf+yCT29ZvvcWRk/muJZTDug4RC/3DBeVqz1B/o9jdiwMtXgvEl+YnOzA9/0bJYTLSkkuJoY/9ESQj7gwkFTxVjQpusubXRyVhPNP+KnpjrtHvWByJBTtNqaIHtjtlD19ucqMOTa2HRsIJ4GEowu3A==-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
+
+      <h5>Macho Matcha</h5>
+      <p class="text-grey">Matcha powder with non-dairy creamer and natural sweetner</p>
+      <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Matcha">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.20 USD</option>
+          <option value="Large">Large $4.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+        
+
+      
       <h3><b>Boba Smoothies</b></h3><br>
     
       <h5>Mango Mango</h5>
       <p class="text-grey">Real mango blended with ice</p>
-      <img src="images/mango.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves"><br>
+      <img src="images/mango.jpg" style="width:50px; height:50px; border-radius:50%" alt="Mango">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.95 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+
+      <h5>Honeydew</h5>
+      <p class="text-grey">Honeydew blended with ice</p>
+      <img src="images/honeydew.jpg" style="width:50px; height:50px; border-radius:50%" alt="Honeydew">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.95 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHsQYJKoZIhvcNAQcEoIIHojCCB54CAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYB84T1gE8oxYMSGyjxBdPzAnUQT9QQInHUMyHjzHUbcW/RxBehrD1sVqOMl19X7hIbJaZcT+dMT8PdTL2PhRZVzCpkXkOb03SEkUAH2uO/aPndQh6saSCOfltPSk5jSLYPq8/mPdNfPxi5FqqEcblbM76fGP/81PrdPj8pF8ZVJ3DELMAkGBSsOAwIaBQAwggEtBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECM5juZBuWf9lgIIBCAR8IyGAsMKOwObRfgPCGJJvCFa32N4u+/zNl0zGGyE3vqH1L/r6BY+aq5fOtHYRxhagOite2zGRNXOZaZymMHEjI3bJ5ySFQYB1JIfgB2FiuZA+Fos+U7jdwMQY1TkSspKytEWv+DTHD/4Woi9TeOL2o3XqMtu3nBDyNk41t/8/VbUUrcYJmQ3kZfOLJfubNgGhOVWQSgZKimPz0n1uvsqGDFaTfDYBl6pTw/D24qCe4a9mue5epBilLE0/QDAzmGgy0rvjuWwCTvrlIRtCF4TgT89rK2x5kRdeKcaBESg1nRxl9DEcYY8kbuw91XSiuUFH/2nSXwEMLbb/Eikp/qU+k8zQmHpXBKCCA4cwggODMIIC7KADAgECAgEAMA0GCSqGSIb3DQEBBQUAMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTAeFw0wNDAyMTMxMDEzMTVaFw0zNTAyMTMxMDEzMTVaMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwUdO3fxEzEtcnI7ZKZL412XvZPugoni7i7D7prCe0AtaHTc97CYgm7NsAtJyxNLixmhLV8pyIEaiHXWAh8fPKW+R017+EmXrr9EaquPmsVvTywAAE1PMNOKqo2kl4Gxiz9zZqIajOm1fZGWcGS0f5JQ2kBqNbvbg2/Za+GJ/qwUCAwEAAaOB7jCB6zAdBgNVHQ4EFgQUlp98u8ZvF71ZP1LXChvsENZklGswgbsGA1UdIwSBszCBsIAUlp98u8ZvF71ZP1LXChvsENZklGuhgZSkgZEwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tggEAMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADgYEAgV86VpqAWuXvX6Oro4qJ1tYVIT5DgWpE692Ag422H7yRIr/9j/iKG4Thia/Oflx4TdL+IFJBAyPK9v6zZNZtBgPBynXb048hsP16l2vi0k5Q2JKiPDsEfBhGI+HnxLXEaUWAcVfCsQFvd2A1sxRr67ip5y2wwBelUecP3AjJ+YcxggGaMIIBlgIBATCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTIzMTIwNDQwNVowIwYJKoZIhvcNAQkEMRYEFBrWyAzNVLjgvxcMGx24bwDY0zmUMA0GCSqGSIb3DQEBAQUABIGAoIAG6LcwlZuEWNQOc8ETPvjP5g2j+B9Ky0Tt5CnaAUkI3qwzOsHvJ0fACJSSvpqEJPxU77t8dwUbtZBlzR32idkJv2I1/Sw1JeKi/JLc9+Qr5wjgMs9Pb169aeUiQyGoCeMsoDmGzcztQHuiKgMSmxJxupezGL8qzVscCW09oPI=-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+        
+
+      <h5>Coconut</h5>
+      <p class="text-grey">Coconut flavoring blended with ice</p>
+      <img src="images/coconut.jpg" style="width:50px; height:50px; border-radius:50%" alt="Coconut">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.95 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+        
+
+      <h5>Strawberry</h5>
+      <p class="text-grey">Strawberries blended with ice</p>
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Strawberry">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $4.95 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <br>
+        
+      
+
     
       <h5>Sunny Day</h5>
       <p class="text-grey">Organic banana blended with strawberry</p>
-      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Strawberry">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Banana">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $5.25 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+
 <br>
-    
-      <h5>Hawaiian Freeze</h5>
-      <p class="text-grey">Pineapple, Coconut, Lychee</p>
-      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/coconut.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+
+    <h5>Mango Strawberry</h5>
+    <p class="text-grey">Mango blended with straberry</p>
+    <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Strawberry">
+    <img src="images/mango.jpg" style="width:50px; height:50px; border-radius:50%" alt="Mango"><br>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <table>
+      <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+        <option value="Small">Small $5.25 USD</option>
+        <option value="Large">Large $5.50 USD</option>
+      </select> </td></tr>
+      </table>
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+  
 <br>
     
       <h5>Strawberry Lemonade</h5>
       <p class="text-grey">Get it? No? Nvm.</p>
-      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/lemons.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Strawberry">
+      <img src="images/lemons.jpg" style="width:50px; height:50px; border-radius:50%" alt="Lemons">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $5.25 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+
+        
 <br>
+<h5>Hawaiian Freeze</h5>
+      <p class="text-grey">Pineapple, Coconut, Lychee</p>
+      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Pineapple">
+      <img src="images/coconut.jpg" style="width:50px; height:50px; border-radius:50%" alt="Coconut">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $5.25 USD</option>
+          <option value="Large">Large $5.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+      <br>
 
       <h3><b>Organic Juice & Smoothies</b></h3><br>
     
       <h5>Sunrise Juice</h5>
       <p class="text-grey">Orange, Pineapple, Apple</p>
-      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Orange">
+      <img src="images/pineapple.jpg" style="width:50px; height:50px; border-radius:50%" alt="Pineapple">
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Apples">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $6.50 USD</option>
+          <option value="Large">Large $6.75 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>     
+    
 <br>
     
-      <h5>Sunset Juice Juice</h5>
+      <h5>Sunset Juice </h5>
       <p class="text-grey">Orange, Banana, Strawberry</p>
-      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Orange">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Banana">
+      <img src="images/strawberry.webp" style="width:50px; height:50px; border-radius:50%" alt="Strawberry">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $6.50 USD</option>
+          <option value="Large">Large $6.75 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+   
 <br>
     
       <h5>Pearfection Smoothie</h5>
       <p class="text-grey">Pear, Apple, Orange, Banana, Honey</p>
-      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/pear.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
+      <img src="images/orange.jpg" style="width:50px; height:50px; border-radius:50%" alt="Orange">
+      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Banana">
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Apples">
+      <img src="images/pear.jpg" style="width:50px; height:50px; border-radius:50%" alt="Pear">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $7.00 USD</option>
+          <option value="Large">Large $7.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHuQYJKoZIhvcNAQcEoIIHqjCCB6YCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYABVrwSmZplQ8qFSyRRSEs24bjMcbRx9TARrmp0557/kOzdAqWotXH+Fb3lEy+DYg75WcTl4CMJDVgr1RFRJPN3xJd5JzqZEUvp+jyG2arudPBFyGvHjiZp31KcyQZEuc4DgXTjvajTlPcIherXnuWde7nAzPIIXDLJHYDt1oFyszELMAkGBSsOAwIaBQAwggE1BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECP2qMQf2Fa9dgIIBEECYizSxyLeoW7MThs/QrOLiFdxRQvZrrELkBgYsR7V5xnfmfHTyFmVuDJxvzFaCAwS5IGpKGfihor9MRx6qr8skUzjFR2pxW0XUSE7k2vbexXsvOHIOPPWGAo7yOQ+c2F5oGPU5T2CkmFRje6ZU7DJGiaxHvhyX9uDDmEJRhM71sTgaBMvRDR9mGvGHJcWpX+XHSrrCBA5s+Cb21l2PLeKiV9oQREFqzLe9uUfWnmWRwpSn37GWK7hF7vayl4I0ytoSgs630jiRZsDqlVLFq/lr9MM5bZqIPmmnOHZ+GlLA+kEsCN4P8+EZwxdCIIMNMFZ/5d/pJwHnYGQoCW8dkE/FkD5izSUyZatMopGpqMV/oIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAxMjMxMjA1MTI3WjAjBgkqhkiG9w0BCQQxFgQUJ22aGll+Uh9OfJy8wh+bkXqU7uYwDQYJKoZIhvcNAQEBBQAEgYApoqyCsaBPS1viVPYmO3h7FfCQkmskikVUM3KzX6Iwoa6KYEtvCJeni7nMaL2M6KUVQ4iISD5ks1pSzc4oscbmvVymFxEM6AmlfPeoTDylJp2dZ3wMtS6NBPJ4adpQe+0OYG/EamNlIIoSPzKEtgGQIoEi5ocPLL4lXt4uFw/jzQ==-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>        
 <br>
+
+    <h5>Kirkland Smoothie</h5>
+    <p class="text-grey">Banana, Avocado, Vegan Protein Powder, Almond Butter, Coconut Water</p>
+    <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Banana">
+    <img src="images/avocado.jpg" style="width:50px; height:50px; border-radius:50%" alt="Avocado">
+    <img src="images/almond butter.webp" style="width:50px; height:50px; border-radius:50%" alt="Almond Butter">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <table>
+      <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+        <option value="Small">Small $7.00 USD</option>
+        <option value="Large">Large $7.50 USD</option>
+      </select> </td></tr>
+      </table>
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      
+
+  
+<br>
+
+    <h5>Hulk Smoothie</h5>
+    <p class="text-grey">Matcha Powder, Almond Milk, Banana, Avocado, Flax Seed, Chia Seed, Honey </p>
+    <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Matcha">
+    <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%" alt="Almonds">
+    <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Banana">
+    <img src="images/avocado.jpg" style="width:50px; height:50px; border-radius:50%" alt="Avocado">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <table>
+      <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+        <option value="Small">Small $7.00 USD</option>
+        <option value="Large">Large $7.50 USD</option>
+      </select> </td></tr>
+      </table>
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      
+    <br>
+    <h5>Avocado</h5>
+    <p class="text-grey">Matcha powder, almond milk, banana, avocado, flax seed, chia seed, honey</p>
+    <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Matcha">
+    <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%" alt="Almond">
+    <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Banana">
+    <img src="images/green tea.jpg" style="width:50px; height:50px; border-radius:50%" alt="Green tea">
+    <img src="images/avocado.jpg" style="width:50px; height:50px; border-radius:50%" alt="Avocado">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <table>
+      <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+        <option value="Small">Small $7.00 USD</option>
+        <option value="Large">Large $7.50 USD</option>
+      </select> </td></tr>
+      </table>
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt=""  src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      <br>
+
 
       <h5>Green Future Smoothie</h5>
       <p class="text-grey">Kale, Celery, Spinach, Apple, Cucumber</p>
-      <img src="images/celery.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/kale.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/cucumber.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-<br>
+      <img src="images/celery.jpg" style="width:50px; height:50px; border-radius:50%" alt="Celery">
+      <img src="images/kale.jpg" style="width:50px; height:50px; border-radius:50%" alt="Kale">
+      <img src="images/apples.jpg" style="width:50px; height:50px; border-radius:50%" alt="Apples">
+      <img src="images/cucumber.jpg" style="width:50px; height:50px; border-radius:50%" alt="Cucumber">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <table>
+        <tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+          <option value="Small">Small $7.00 USD</option>
+          <option value="Large">Large $7.50 USD</option>
+        </select> </td></tr>
+        </table>
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"  name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+<br>        
 
-      <h5>Kirkland Smoothie</h5>
-      <p class="text-grey">Banana, Avocado, Vegan Protein Powder, Almond Butter, Coconut Water</p>
-      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/avocado.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/almond butter.webp" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-<br>
 
-      <h5>Hulk Smoothie</h5>
-      <p class="text-grey">Matcha Powder, Almond Milk, Banana, Avocado, Flax Seed, Chia Seed, Honey </p>
-      <img src="images/matcha.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/almond.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/banana.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-      <img src="images/avocado.jpg" style="width:50px; height:50px; border-radius:50%" alt="Sunlight under Leaves">
-<br>
+
+     
+
+    
     </div>  
   </div>
 </div>
